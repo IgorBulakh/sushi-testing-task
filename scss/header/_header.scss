@@ -1,0 +1,41 @@
+.page-header {
+  background: $color-bg-blue;
+}
+
+.hat-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+
+  @media screen and(min-width: $tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and(min-width: $desctop) {
+  }
+
+  & .link {
+    display: inline-flex;
+    align-items: center;
+    color: $color-white;
+  }
+
+  & .hat-img {
+    width: 90px;
+    // height: 30px;
+    margin-right: 20px;
+  }
+
+  & .batton {
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+
+    border: none;
+    background: $color-bg-orange;
+    color: $color-white;
+    font-weight: 700;
+  }
+}

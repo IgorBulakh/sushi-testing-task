@@ -1,0 +1,129 @@
+.caption {
+  & .title {
+    margin-bottom: 50px;
+  }
+}
+
+.caption {
+  & .section {
+    &:nth-child(even) {
+      background: $color-bg-section;
+    }
+  }
+}
+.proposition {
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+.text-list {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  @media screen and(min-width:$tablet) {
+    width: 90%;
+  }
+  @media screen and(min-width:$desctop) {
+    width: 57%;
+  }
+}
+
+.galery {
+  @media screen and(min-width:$tablet) {
+    display: flex;
+  }
+  & .title {
+    margin-bottom: 10px;
+  }
+}
+
+// блок галереи под адаптивку
+.list {
+  .caption & {
+    @media screen and(min-width: $tablet) {
+      display: flex;
+
+      // width: calc((100% - 3 * 30px) / 3);
+      // margin: 5px;
+    }
+  }
+}
+
+// галерея ролов меню
+.list-menu {
+  padding: 10px 20px 20px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+
+  @media screen and(min-width: $tablet) {
+    margin-right: 10px;
+  }
+
+  & .link {
+    display: inline-block;
+    color: $color-grey;
+  }
+
+  & .text {
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+
+  & .active-link:hover {
+    color: $color-green;
+  }
+}
+
+.title-color {
+  color: $color-braun;
+}
+
+.img-rol {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section-slider {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  & .title {
+    color: $color-white;
+  }
+}
+
+.slider-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 100%;
+  @media screen and(min-width: $tablet) {
+    width: 70%;
+  }
+}
+
+.list-set {
+  flex-direction: column;
+  @media screen and(min-width:$tablet) {
+    justify-content: space-around;
+  }
+}
+
+.slider-list {
+  display: flex;
+  justify-content: center;
+  & .list-radius {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $color-bg-points;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

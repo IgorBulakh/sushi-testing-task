@@ -1,0 +1,30 @@
+.copyright {
+  margin-left: auto;
+  margin-right: auto;
+
+  border: none;
+  background: transparent;
+
+  & p {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.icon-close {
+  // display: none;
+  color: black;
+  font-weight: 700;
+}
+
+.copyright.is-open .icon-close {
+  // display: block;
+  color: white;
+}
+
+.copyright.is-open .icon-menu {
+  // display: none;
+  color: black;
+  font-weight: 700;
+}
